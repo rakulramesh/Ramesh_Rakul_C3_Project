@@ -68,4 +68,12 @@ public class Restaurant {
         return name;
     }
 
+    public int getTotalPrice(List<Item> ItemList) {
+        int totalPrice = 0;
+        for(Item item:ItemList){
+            totalPrice += item.getPrice();
+        }
+        return totalPrice;
+    }
+
 }
